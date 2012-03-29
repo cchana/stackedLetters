@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>jQuery plugin that stacks letters</title>
+    <link href="http://fonts.googleapis.com/css?family=Amaranth:400,700" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    * {
+    	-webkit-backface-visibility: hidden;
+    }
+    body {
+    	background-color: #555;
+    	margin: 0;
+    	padding: 0;
+    }
+    p {
+    	color: #F50;
+    	font-family:'Amaranth', sans-serif;
+    	font-size:2em;
+    }
+    span#stackedBoldWithShadow {
+        letter-spacing: -0.2em;
+    }
+    </style>
+</head>
+<body>
+
+<p>What are stacked letters? <span id="stackedWithShadow">These are stacked letters, with a shadow!</span></p>
+
+<p><span id="stackedNoShadow">These are stacked letters, with <strong>No</strong> a shadow!</span></p>
+
+<p><span id="stackedBoldWithShadow"><strong>Bold text, stacked!</strong></span></p>
+
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAQOlb_g8joFBTtRyfRu-nzhTFSbbFIkv6FEdg9z-EYkO5NctXsRT5V4QJne5jg3FJqiD5toGhhtnP2Q"></script>
+<script type="text/javascript">
+	google.load("jquery", "1.5");
+</script>
+<script type="text/javascript" src="stackedletters.js"></script>
+<script type="text/javascript">
+$('#stackedWithShadow').stackedLetters({'text-shadow': '-1px 0 3px black'});
+$('#stackedNoShadow').stackedLetters({'text-shadow': 'none'});
+$('#stackedBoldWithShadow').stackedLetters();
+</script>
+
+</body>
+</html>
