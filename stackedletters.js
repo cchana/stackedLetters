@@ -27,7 +27,7 @@
 			    allSpansSize = allSpans.size();
 			if(settings.direction != 'right-to-left') {
 			    allSpans.css('position', 'relative');
-			    if(settings.direction != 'staggered') {
+			    if(settings.direction != 'alternating') {
                     allSpans.each(function(i) {
     			        $(this).css('z-index', allSpansSize - i);
     			    });
