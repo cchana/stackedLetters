@@ -1,1 +1,7 @@
-Hello World!
+Stacked Letters is a jQuery plugin that simply stacks letters on top of each other. The subtelty (or lack of!) of the effect depends on the CSS you apply to the text.
+
+All you need to get started is:
+
+    $('#elementId').stackedLetters();
+
+with the correct letter-spacing and text-shadow CSS properties, this can give you a great effect.
